@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
+    
     <div class="container-fluid">
         <div class="row">
           <!--vertical nav-bar section -->
           <div class="col-3">
-            <div class="navbar navbar-dark bg-light">
-              <ul class="navbar-nav" id="films">
+            <div class="navbar navbar-dark bg-light ">
+              <ul class="navbar-nav lh-lg text-info" id="films">
                 <li class="nav-item">
                   <a href="" class="nav-link">list of movies will go here</a>
                 </li>
@@ -28,16 +29,22 @@
                      src="[MOVIE POSTER]"
                      alt="[MOVIE TITLE]"
                      /> 
-                <div class="card-body">
+                <div class="card-body text-info ">
               
-                  <div id="title" class="card-title">[MOVIE TITLE]</div>
-                  <div id="film-info" class="card-text" >[INSERT MOVIE DESCRIPTION HERE]</div>
-                  <ul class="list-group list-group-flush">
-                    <li id="runtime" class="list-group-item">[RUNTIME]</li>
-                    <li id="showtime" class="list-group-item">[SHOWTIME]</li>
-                    <li id="ticket-num"  class="list-group-item">AVAILABLE TICKET</li>
-                    <li id="buy-ticket" class="list-group-item btn btn-primary">[BUY TICKET]</li>
-                  </ul>
+                  <div id="title" class="card-title text-uppercase fs-2">[MOVIE TITLE]</div>
+                  <div id="film-info" class="card-text mb-2 fst-italic" >[INSERT MOVIE DESCRIPTION HERE]</div>
+                  <div class="list-group list-group-flush  d-flex flex-row mt-1 justify-content-evenly mb-2">
+                    <span id="runtime" class=" flex-fill ">[RUNTIME]</span>
+                    <span id="showtime" class=" flex-fill">[SHOWTIME]</span>
+
+                  </div>
+                    <div class="d-flex flex-row justify-content-evenly">
+                    <span id="ticket-num"  class="flex-fill justify-content-evenly">AVAILABLE TICKET</span>
+                    <span id="buy-ticket" class=" btn btn-primary flex-fill justify-content-evenly">[BUY TICKET]</span>
+                    </div>
+                    
+                      
+                  
                 </div>
               </div>
           
@@ -46,7 +53,7 @@
         </div>
           
     </div>
-      
+              
     
 <script src="js/bootstrap.js"></script>
 <script src="js/index.js"></script>
