@@ -4,11 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Flatdango</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
 <body>
-    <h1>abdishukri</h1>
-
-    <script src="js/index.js"></script>
+    <div class="container-fluid">
+        <div class="row">
+          <!--vertical nav-bar section -->
+          <div class="col-3">
+            <div class="navbar navbar-dark bg-light">
+              <ul class="navbar-nav" id="films">
+                <li class="nav-item">
+                  <a href="" class="nav-link">list of movies will go here</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+            <!-- card image and details section -->
+          <div class="col-9">
+              <div class="card" id="showing">
+                <img id="poster"  class="card-image-top" style="height: 300px; width: auto;"
+                     src=""
+                     alt="[MOVIE TITLE]"
+                     /> 
+                <div class="card-body">
+              
+                  <div id="title" class="card-title">[MOVIE TITLE]</div>
+                  <div id="film-info" class="card-text" >[INSERT MOVIE DESCRIPTION HERE]</div>
+                  <ul class="list-group list-group-flush">
+                    <li id="runtime" class="list-group-item">[RUNTIME]</li>
+                    <li id="showtime" class="list-group-item">[SHOWTIME]</li>
+                    <li id="ticket-num"  class="list-group-item">AVAILABLE TICKET</li>
+                    <li id="buy-ticket" class="list-group-item btn btn-primary">[BUY TICKET]</li>
+                  </ul>
+                </div>
+              </div>
+          
+            </div>
+              
+        </div>
+          
+    </div>
+      
+    
+<script src="js/bootstrap.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>
