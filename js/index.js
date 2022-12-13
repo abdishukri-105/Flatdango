@@ -31,35 +31,35 @@ document.addEventListener('DOMContentLoaded', ()=>{
     })
     }
 
-    const listHolder = document.getElementById('films')
+    const navBar = document.getElementById('movies-list')
 
     //Create fetch function
-    function fetchMovies(url){
-        fetch(url).then(response => response.json())
+    const fetchAllMovies = url => {
+        fetch(url).then(res => res.json())
         .then(movies => {
             movies.forEach(movie => {
-                displayMovie(movie)
+                displayAllMovies(movie)
             });
         })
     }
 
     // display movies lists in the menu 
-    function displayMovie(movie){
+    const displayAllMovies = movie => {
     
         const li = document.createElement('li')
         li.style.cursor ="pointer"
         li.textContent = (movie.title).toUpperCase()
-        listHolder.appendChild(li)
-        addClickEvent()
+        navBar.appendChild(li)
+        displayMovieDetails()
     }
 
     // click to dsplay movie details
-    function addClickEvent(){
-        let children = listHolder.children
+    const displayMovieDetails = () =>{
+        let children = navBar.children
         // console.log(children)
 
         for(let i=0; i<children.length; i++){
-            let child=children[i]
+            let child = children[i]
             // console.log(child)
 
             child.addEventListener('click',() => {
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 }
         })
 
-        fetchMovies(url)
+        fetchAllMovies(url)
         fetchData1()
 
 })
