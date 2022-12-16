@@ -2,7 +2,7 @@
 // first movie fetch url
 //const url1 = 'http://localhost:3000/films/1' 
 // all movies fetch url
-let url = 'https://flatdango-ma7g9at2y-abdishukri-105.vercel.app/db.json'
+let url = 'https://flatdango-ma7g9at2y-abdishukri-105.vercel.app'
 
 document.addEventListener('DOMContentLoaded', ()=>{
 
