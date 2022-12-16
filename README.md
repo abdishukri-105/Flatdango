@@ -56,7 +56,7 @@ Start the json server
 
 ### 2.visit the app directly
 
-#### to visit the app directly click here https://abdishukri-105.github.io/Flatdango/
+#### to visit the app directly click here https://flatdango-bice.vercel.app/
 
 
 
